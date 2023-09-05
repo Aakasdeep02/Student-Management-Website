@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	  th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<section>
+			<div class="container">
+		    <div class="row">
+		      <div class="col-md-6 offset-md-3 mt-5">
+		        <div class="card">
+		          <div class="card-header">
+		            <h4>Student Details</h4>
+		          </div>
+		          <div class="card-body">
+		            <div class="form-group">
+		              <label for="name">Name:</label>
+		              <input type="text" th:field=${student.fullName} class="form-control" id="name" readonly>
+		            </div>
+		            <div class="form-group">
+		              <label for="rollno">Email:</label>
+		              <input type="email" th:field=${student.email} class="form-control" id="rollno" readonly>
+		            </div>
+		            <div class="form-group">
+		              <label for="course">Qualification:</label>
+		              <input type="text" th:field=${student.qualification} class="form-control" id="course" readonly>
+		            </div>
+		            <div class="form-group">
+		              <label for="batch">Batch:</label>
+		              <input type="text" class="form-control" id="batch" readonly>
+		            </div>
+		            <div class="form-group">
+		              <label for="address">Address:</label>
+		              <textarea class="form-control" th:field=${student.address} id="address" rows="3" readonly></textarea>
+		            </div>
+		            <div class="form-group">
+		              <label for="phone">Phone:</label>
+		              <input type="text" th:field=${student.mobileNumber} class="form-control" id="phone" readonly>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	 </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

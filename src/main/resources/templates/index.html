@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Management WebSite</title>
+ <style>
+    .custom-btn:hover {
+      background-color: blue; 
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+
+	<section class = "hero bg-primary text-white py-5">
+		<div class="container">
+	      <div class="row align-items-center">
+	        <div class="col-lg-6">
+	          <h1 class="display-4">Simple Management WebSite for University</h1>
+	          <p class="lead">Manage Student with our Small Project WebSite. New Student Register by clicking Student Registration Button.
+	          Already register use login button both for Student and Admin.</p>
+	          <a href="register" class="btn btn-light btn-lg custom-btn">Student Registration</a>
+	          <a href="signin" class="btn btn-light btn-lg custom-btn">Login</a>
+	        </div>
+	        <div class="col-lg-6">
+	          <img src="../static/images/29476.jpg" th:src="@{images/29476.jpg}" class="img-fluid">
+	        </div>
+	      </div>
+	    </div>
+	</section>
+	
+	<section class="features py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Student Tracking</h5>
+              <p class="card-text">Keep track of your student, delete and Seen their full details for admin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Simple Student Registration</h5>
+              <p class="card-text">Fill your detail and Track your progress. Wait for More function to come.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Simple Login for both Student and Admin</h5>
+              <p class="card-text">Student can see their detail and Admin can perform its task easily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   <section class="footer" style= " background : #E0F6FF; ">
+    <div class="container text-center">
+      <p>&copy; 2023 FreshStudentManagement. All rights reserved.</p>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
